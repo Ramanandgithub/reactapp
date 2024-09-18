@@ -1,0 +1,35 @@
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    justify-content: center; /* Center the buttons horizontally */
+    margin: 20px 0; /* Spacing around the filter section */
+    padding: 10px; /* Padding inside the filter section */
+}
+
+.btn {
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    margin: 5px; /* Margin between buttons */
+    font-size: 16px; /* Font size for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    flex: 1 1 auto; /* Allow buttons to grow and shrink */
+    min-width: 120px; /* Minimum width for buttons */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow for accessibility */
+}
+
+.btn:active {
+    transform: translateY(1px); /* Pressed effect */
+}

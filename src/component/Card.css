@@ -1,0 +1,45 @@
+.card {
+    background-color: white; /* Background color for the card */
+    border: 1px solid #ddd; /* Light border for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures content fits within the card */
+    width: 100%; /* Allow the card to be flexible */
+    max-width: 350px; /* Set a max width for larger screens */
+    margin: 10px; /* Margin for spacing between cards */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover for emphasis */
+}
+
+.top-image {
+    position: relative; /* Positioning for the heart icon */
+}
+
+.top-image img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd; /* Optional: border below the image */
+}
+
+.bottom-image {
+    position: absolute; /* Position the heart icon */
+    top: 130px; /* Positioning from the top */
+    right: 10px; /* Positioning from the right */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 30px;
+}
+
+h3 {
+    margin: 15px; /* Add margin around the title */
+    font-size: 1.5rem; /* Font size for the title */
+}
+
+p {
+    margin: 15px; /* Add margin around the paragraph */
+    font-size: 1rem; /* Font size for the description */
+    color: #555; /* Text color */
+    text-align: justify; /* Justify text */
+}
