@@ -6,6 +6,7 @@ import Cards from './component/Cards';
 import TopCourses from './component/TopCourses';
 import { filterdata, apiUrl } from './data';
 import { useState, useEffect } from 'react';
+import CircleLoader from "react-spinners/CircleLoader";
 
 function App() {
   const [res, setRes] = useState(null);
@@ -34,7 +35,7 @@ function App() {
         <Filter data={filterdata} />
       </div>
       <div>
-        {res ? <Cards cards={res} /> : <p>Loading...</p>}
+        {res ? <Cards cards={res} /> : <p className='loader'><CircleLoader /></p>}
       </div>
       <ToastContainer />
     </div>
